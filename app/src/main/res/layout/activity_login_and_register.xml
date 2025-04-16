@@ -93,6 +93,7 @@
                         android:textSize="11sp"
                         android:textColor="@color/black"
                         android:layout_marginStart="4dp"
+                        android:background="@drawable/rounded_button"
                         />
                 </LinearLayout>
 
@@ -114,8 +115,7 @@
                     android:layout_height="wrap_content"
                     android:hint="E-mail"
                     android:inputType="textEmailAddress"
-                    android:padding="12dp"
-                    android:background="@drawable/campos"
+                    android:background="@drawable/input_email"
                     android:layout_marginBottom="16dp" />
 
                 <!-- Campo de Contraseña -->
@@ -125,8 +125,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Contraseña"
                     android:inputType="textPassword"
-                    android:padding="12dp"
-                    android:background="@drawable/campos"
+                    android:background="@drawable/input_email"
                     android:layout_marginBottom="24dp" />
 
                 <!-- Botón de Inicio de Sesión -->
@@ -148,7 +147,7 @@
                     android:layout_height="wrap_content"
                     android:text="Forgot a Password?"
                     android:textAlignment="center"
-                    android:textColor="#757575"/>
+                    android:textColor="@color/black"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>

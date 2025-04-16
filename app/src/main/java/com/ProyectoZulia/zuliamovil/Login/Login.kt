@@ -44,7 +44,7 @@ class Login : AppCompatActivity() {
         // Cambiar color y hacerlo clickeable solo en "Regístrate"
         val clickableSpan = object : ClickableSpan() {
             override fun onClick(widget: View) {
-                val intent = Intent(this@Login, LoginAndRegister::class.java)
+                val intent = Intent(this@Login, RegistroandLogin::class.java)
                 startActivity(intent)
             }
 

@@ -22,8 +22,6 @@ class LoginAndRegister : AppCompatActivity() {
             insets
         }
 
-        val btnRegistrar = findViewById<MaterialButton>(R.id.btn_reg)
-        btnRegistrar.background = ContextCompat.getDrawable(this, R.drawable.btn_registrar_radius)
-        btnRegistrar.backgroundTintList = null
+
     }
 }

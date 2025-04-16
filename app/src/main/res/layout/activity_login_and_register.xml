@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginAndRegister">
+
+    <!-- Imagen de Fondo -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:clipToOutline="true"
+        android:contentDescription="@string/backgroundaplication" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:background="#D7D7D7">
+
+
+        <!-- Logo -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="75dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/logo_zuliamovil"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logozuliamovil"/>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="80dp"/>
+
+        <!-- Tarjeta de Inicio de Sesión -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="40dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/btn_registrar_radius"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <!-- Boton Iniciar Sesion/Registrarse -->
+                    <Button
+                        android:id="@+id/btn_acc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Acceder"
+                        android:textSize="11sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/rounded_button"/>
+
+                    <Button
+                        android:id="@+id/btn_reg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Registrarse"
+                        android:textSize="11sp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="4dp"
+                        />
+                </LinearLayout>
+
+                <!-- Texto de Bienvenida -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bienvenido a ZuliaMovil"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="24dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Campo de Correo Electrónico -->
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:background="@drawable/campos"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Campo de Contraseña -->
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:background="@drawable/campos"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Botón de Inicio de Sesión -->
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar Sesion"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#00838F"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_button"/>
+
+                <!-- Olvidé mi Contraseña -->
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot a Password?"
+                    android:textAlignment="center"
+                    android:textColor="#757575"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</FrameLayout>
